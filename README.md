@@ -61,6 +61,13 @@ python train.py --data_path /path/to/empirical_analysis_data/training_data_examp
 
 ## 📊 Evaluation
 
+The repository includes evaluation modules for:
+
+1. **Mean and Covariance Calculation** - With winsorization and shrinkage estimation
+2. **Simulation Evaluation** - Comparing generated distributions (both return and latent subspace) with ground truth
+3. **Mean-Variance Portfolio Evaluation** - Creating mean-variance portfolios with performance metrics
+4. **Factor Timing Portfolio Evaluation** - Using PCA, POET, RP-PCA for factor-based portfolios
+
 <p align="center">
   <img src="assets/distribution_example.png">
 </p>
@@ -68,15 +75,6 @@ python train.py --data_path /path/to/empirical_analysis_data/training_data_examp
 <p align="center">
   <img src="assets/portfolio_example.png">
 </p>
-
-The above figures show the comparison between the ground truth data (red) and the generated samples from our model (blue) for high and low volatility stocks, demonstrating the model's ability to accurately capture different market behaviors.
-
-The repository includes evaluation modules for:
-
-1. **Mean and Covariance Calculation** - With winsorization and shrinkage estimation
-2. **Simulation Evaluation** - Comparing generated distributions (both return and latent subspace) with ground truth
-3. **Mean-Variance Portfolio Evaluation** - Creating mean-variance portfolios with performance metrics
-4. **Factor Timing Portfolio Evaluation** - Using PCA, POET, RP-PCA for factor-based portfolios
 
 ## 📚 Citation
 
