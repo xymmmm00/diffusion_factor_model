@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import ortho_group
 from scipy.stats import norm
 from scipy.stats.mstats import winsorize
-from models.diffusion_factor_model import GaussianLatentSampler2D_Finance
+from diffusion_factor_model.diffusion_factor_model import GaussianLatentSampler2D_Finance
 from tqdm.auto import tqdm
 import seaborn as sns
 sns.set_style('white')
