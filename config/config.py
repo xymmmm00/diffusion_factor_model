@@ -25,7 +25,7 @@ SEED = 1234
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Model parameters
-MODEL_DIM = 64            # Base dimension for U-Net
+MODEL_DIM = 128            # Base dimension for U-Net
 MODEL_CHANNELS = 1        # Number of channels in input data
 MODEL_FILTER_SIZE = 7     # Filter size for convolutions
 
@@ -45,7 +45,7 @@ AUTO_NORMALIZE = False
 # Training parameters
 BATCH_SIZE = 128
 LEARNING_RATE = 1e-4
-EPOCHS = 200
+EPOCHS = 300
 WEIGHT_DECAY = 0.01
 USE_COSINE_SCHEDULER = True
 USE_WARM_UP = True
@@ -53,7 +53,7 @@ WARMUP_STEPS = 10
 COSINE_CYCLE_LENGTH = 40  # T_MAX
 COSINE_LR_MIN = 1e-6      # ETA_MIN
 GRADIENT_ACCUMULATION = 1
-EMA_DECAY = 0.995
+EMA_DECAY = 0.999
 SPLIT_BATCHES = False
 SAVE_INTERVAL = 50        # Save checkpoint every N epochs
 
